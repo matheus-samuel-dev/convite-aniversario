@@ -34,7 +34,7 @@ https://convite-aniversario-9398f.web.app/login.html
 
 ### 📱 Mobile
 
-<img src="screenshots/pagina_principal_mobile.jpg" width="300">
+<img src="screenshots/pagina_principal_mobile.jpeg" width="300">
 
 </td>
 </tr>
