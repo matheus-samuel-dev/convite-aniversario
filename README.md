@@ -1,366 +1,225 @@
 # 🎉 Convite Aniversário Online
 
-Sistema completo de confirmação de presença (RSVP) para aniversários e eventos, desenvolvido com HTML, CSS, JavaScript e Firebase.
+Sistema completo de confirmação de presença (RSVP) desenvolvido para gerenciamento de convidados de eventos.
+
+O projeto permite que convidados confirmem presença através de um convite digital moderno e responsivo, enquanto administradores acompanham confirmações em tempo real através de um dashboard protegido por autenticação.
 
 ---
 
-## 📖 Sobre o Projeto
+## 🚀 Demonstração
 
-O Convite Aniversário Online é uma aplicação web moderna criada para facilitar a confirmação de presença em eventos.
+🌐 **Aplicação Online**
 
-O sistema permite que convidados confirmem presença, adicionem acompanhantes, visualizem informações do evento e recebam uma experiência interativa através de uma interface elegante e responsiva.
+https://convite-aniversario-9398f.web.app
 
-Além disso, o projeto conta com recursos avançados como integração com Firebase, painel administrativo, estatísticas em tempo real, exportação de convidados para Excel, QR Code para localização e compartilhamento via WhatsApp.
+🔐 **Área Administrativa**
+
+https://convite-aniversario-9398f.web.app/login.html
+
+---
+
+## 📸 Screenshots
+
+<table>
+<tr>
+<td width="50%">
+
+### 🖥️ Desktop
+
+<img src="screenshots/pagina_principal_desktop.png">
+
+</td>
+
+<td width="50%">
+
+### 📱 Mobile
+
+<img src="screenshots/pagina_principal_mobile.jpg" width="300">
+
+</td>
+</tr>
+</table>
+
+### 🔐 Dashboard Administrativo
+
+<img src="screenshots/dashboard_administrativo.png">
 
 ---
 
 ## ✨ Funcionalidades
 
-### 🎫 Convite Digital
+### 🎈 Convite Digital
 
-* Layout moderno e responsivo
-* Informações do evento
-* Nome do aniversariante personalizável
-* Data e horário do evento
-* Endereço completo
-* Mapa integrado
-* QR Code para localização
+* Contador regressivo para o evento
+* Design responsivo para desktop e mobile
+* Compartilhamento via WhatsApp
+* Tema claro/escuro
+* Integração com Google Maps
+* Interface moderna com efeito Glassmorphism
 
 ### ✅ Sistema RSVP
 
 * Confirmação de presença
-* Confirmação de ausência
-* Formulário em etapas
-* Validação dos campos
-* Máscara automática para telefone
-
-### 👥 Gestão de Acompanhantes
-
-* Cadastro de até 5 acompanhantes
-* Inclusão dinâmica de convidados
-* Remoção de acompanhantes
-* Validação de nomes
-
-### 📊 Painel Administrativo
-
-* Listagem de convidados
-* Pesquisa por nome
-* Pesquisa por telefone
-* Filtro por status
-* Controle de presença
-* Atualização em tempo real
-
-### 📈 Dashboard
-
-* Total de convidados
-* Total de confirmações
-* Total de recusas
-* Total de acompanhantes
-* Taxa de comparecimento
-* Gráficos estatísticos
-
-### 🔥 Firebase
-
+* Cadastro de acompanhantes
+* Validação de telefone
 * Armazenamento em nuvem
-* Banco de dados Firestore
-* Atualizações em tempo real
-* Hospedagem Firebase Hosting
-* Segurança através de regras
+* Feedback visual de confirmação
 
-### 📁 Exportação
+### 🔐 Dashboard Administrativo
 
-* Exportar convidados para Excel (.xlsx)
-* Exportar lista CSV
-* Backup dos dados
-
-### 📲 Compartilhamento
-
-* Compartilhar convite via WhatsApp
-* Compartilhar link do evento
-* Compartilhamento nativo para dispositivos móveis
-
-### ⏳ Contador Regressivo
-
-* Dias restantes
-* Horas restantes
-* Minutos restantes
-* Segundos restantes
-
-### 🌙 Tema Escuro
-
-* Dark Mode
-* Light Mode
-* Preferência salva automaticamente
-
-### 🎊 Experiência do Usuário
-
-* Animações suaves
-* Efeito de confetes
-* Transições modernas
-* Feedback visual
-* Interface intuitiva
-
-### 📱 Responsividade
-
-Compatível com:
-
-* Desktop
-* Notebook
-* Tablet
-* Android
-* iPhone
-
-### 🚀 PWA
-
-* Instalável como aplicativo
-* Funciona em celulares
-* Ícone personalizado
-* Experiência semelhante a app nativo
+* Login protegido com Firebase Authentication
+* Listagem de convidados
+* Pesquisa em tempo real
+* Exclusão de convidados
+* Estatísticas de presença
+* Exportação CSV
+* Gráfico de confirmações utilizando Chart.js
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Front-End
+### Frontend
 
 * HTML5
 * CSS3
-* JavaScript ES6+
+* JavaScript (ES6 Modules)
 
-### Banco de Dados
+### Backend as a Service
 
+* Firebase Authentication
 * Firebase Firestore
-
-### Hospedagem
-
 * Firebase Hosting
-* GitHub Pages
 
 ### Bibliotecas
 
+* Chart.js
 * Font Awesome
-* SheetJS
-* Firebase SDK
-* Canvas Confetti
 
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```text
-CONVITE-ANIVERSARIO
+convite-aniversario/
 │
-├── assets
-│   │
-│   ├── images
-│   │   ├── banner.jpg
-│   │   ├── background.jpg
-│   │   └── logo.png
-│   │
-│   ├── icons
-│   │   ├── calendar.svg
-│   │   ├── clock.svg
-│   │   ├── location.svg
-│   │   └── whatsapp.svg
-│   │
-│   └── audio
-│       └── music.mp3
+├── assets/
+│   └── images/
+│       ├── conviteAniversarioIrmao.jpeg
+│       ├── hero-banner_att.png
+│       └── hero-banner_mobile.png
 │
-├── css
+├── screenshots/
+│   ├── pagina_principal_desktop.png
+│   ├── pagina_principal_mobile.jpg
+│   └── dashboard_administrativo.png
+│
+├── css/
 │   └── style.css
 │
-├── js
-│   ├── script.js
-│   ├── firebase.js
-│   ├── countdown.js
+├── js/
 │   ├── admin.js
+│   ├── auth.js
+│   ├── countdown.js
 │   ├── dashboard.js
+│   ├── firebase.js
+│   ├── script.js
 │   └── theme.js
 │
-├── pages
+├── pages/
 │   ├── admin.html
 │   └── dashboard.html
 │
-├── manifest.json
-├── firebase.json
-├── .gitignore
 ├── index.html
+├── login.html
+├── firebase.json
+├── manifest.json
+├── 404.html
 └── README.md
 ```
 
 ---
 
-## 🚀 Como Executar Localmente
+## 🔒 Área Administrativa
 
-### 1. Clone o repositório
+A área administrativa utiliza Firebase Authentication para proteger o acesso ao dashboard.
 
-```bash
-git clone https://github.com/seuusuario/convite-aniversario.git
-```
+### Recursos disponíveis
 
-### 2. Entre na pasta
-
-```bash
-cd convite-aniversario
-```
-
-### 3. Abra o projeto
-
-Utilize o Live Server do VS Code ou simplesmente abra:
-
-```text
-index.html
-```
+* Visualizar convidados
+* Pesquisar convidados
+* Excluir registros
+* Exportar lista CSV
+* Visualizar estatísticas
+* Monitorar confirmações em tempo real
 
 ---
 
-## 🔥 Configuração do Firebase
+## 📊 Dashboard
 
-### Criar Projeto
-
-1. Acesse:
-
-https://firebase.google.com
-
-2. Clique em:
-
-```text
-Criar Projeto
-```
-
-3. Ative:
-
-* Firestore Database
-* Firebase Hosting
-
-4. Copie suas credenciais.
-
----
-
-### Exemplo de Configuração
-
-```javascript
-const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  projectId: "SEU_PROJETO",
-  storageBucket: "SEU_PROJETO.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000:web:000000000"
-};
-```
-
----
-
-## 📊 Recursos Administrativos
-
-### Dashboard
+O painel administrativo exibe:
 
 * Total de convidados
-* Total de confirmações
 * Total de acompanhantes
-* Gráficos de presença
-
-### Pesquisa
-
-* Nome
-* Telefone
-* Status
-
-### Exportação
-
-* Excel
-* CSV
+* Total de confirmações
+* Percentual de presença
+* Gráfico de presença
+* Lista completa de participantes
 
 ---
 
-## 📱 Compartilhamento WhatsApp
+## 📱 Responsividade
 
-O sistema gera automaticamente links de compartilhamento:
+O projeto foi desenvolvido para funcionar em:
 
-```text
-https://wa.me/
-```
-
-permitindo o envio rápido do convite para familiares e amigos.
-
----
-
-## 🎯 Objetivos do Projeto
-
-Este projeto foi desenvolvido para demonstrar conhecimentos em:
-
-* HTML5
-* CSS3
-* JavaScript
-* Firebase
-* Firestore
-* Manipulação do DOM
-* CRUD
-* Responsividade
-* Integração com APIs
-* PWA
-* UX/UI Design
+* Desktop
+* Notebook
+* Tablet
+* Smartphones Android
+* Smartphones iPhone
 
 ---
 
-## 🔮 Melhorias Futuras
+## 🔥 Aprendizados Aplicados
 
-* Login administrativo
-* Convites por e-mail
-* Sistema de check-in por QR Code
-* Notificações Push
-* Lista de presentes integrada
-* Confirmação automática via WhatsApp
-* Múltiplos eventos
-* Área exclusiva para organizadores
+Durante o desenvolvimento foram praticados conceitos como:
+
+* Manipulação de DOM
+* JavaScript Modular
+* Firebase Authentication
+* Firebase Firestore
+* Firebase Hosting
+* Responsividade Mobile First
+* Validação de formulários
+* Integração com APIs Web
+* Controle de estado da interface
+* Arquitetura Frontend baseada em módulos
 
 ---
 
-## 📸 Screenshots
+## 🚀 Melhorias Futuras
 
-Adicione imagens do projeto na pasta:
-
-```text
-assets/images
-```
-
-Exemplo:
-
-```markdown
-![Tela Inicial](assets/images/home.png)
-
-![Confirmação](assets/images/confirmacao.png)
-
-![Dashboard](assets/images/dashboard.png)
-```
+* [ ] Editar convidados cadastrados
+* [x] Excluir acompanhantes individualmente
+* [ ] Filtros avançados
+* [ ] QR Code para confirmação
+* [ ] PWA instalável
+* [ ] Relatórios PDF
+* [ ] Histórico de alterações
+* [ ] Dashboard avançado
 
 ---
 
 ## 👨‍💻 Autor
 
-Matheus Samuel
+**Matheus Samuel**
 
-### GitHub
-
+GitHub:
 https://github.com/matheus-samuel-dev
 
-### LinkedIn
-
-https://www.linkedin.com/in/matheus-samuel-dev/
-
----
-
-## ⭐ Demonstração
-
-Quando publicado:
-
-```text
-https://seuusuario.github.io/convite-aniversario
-```
+LinkedIn:
+https://www.linkedin.com/in/matheus-samuel-dev
 
 ---
 
-## 📄 Licença
-
-Este projeto está disponível para fins de estudo, aprendizado e demonstração de portfólio.
+⭐ Se gostou do projeto, considere deixar uma estrela no repositório.
