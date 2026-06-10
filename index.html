@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="🎉 Aniversário do Vicenzo - 2 Anos">
+
+    <meta property="og:description" content="Venha comemorar conosco esse dia especial na Fazendinha do Vicenzo!">
+
+    <meta property="og:image" content="https://convite-aniversario-9398f.web.app/assets/images/hero-banner_att.png">
+
+    <meta property="og:url" content="https://convite-aniversario-9398f.web.app">
+
+    <meta property="og:type" content="website">
+
+    <title>Aniversário do Vicenzo - 2 Anos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Botão Tema -->
+
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <div class="hero-content">
+
+                <h1>Aniversário do Vicenzo</h1>
+
+                <h2>🎉 2 Anos 🎉</h2>
+
+                <p>
+                    Venha comemorar esse momento especial conosco!
+                </p>
+
+                <a href="#rsvp-form" class="hero-btn">
+                    Confirmar Presença
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTADOR -->
+
+    <section class="countdown-section">
+
+        <h2>Faltam apenas</h2>
+
+        <div id="countdown" class="countdown">
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Dias</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Horas</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutos</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Segundos</small>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENTO -->
+
+    <section class="event-info">
+
+        <div class="card">
+
+            <h2>Informações do Evento</h2>
+
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>25 de Julho de 2026</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>12:00</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-location-dot"></i>
+                <span>
+                    Churrasqueira Condomínio Torre Blanca
+                </span>
+            </div>
+
+            <p class="address">
+                Avenida Braz Leme, 2241 - São Paulo/SP
+            </p>
+
+            <a href="https://maps.google.com/?q=Avenida+Braz+Leme+2241+Sao+Paulo" target="_blank" class="maps-btn">
+                Ver rota
+            </a>
+
+        </div>
+
+    </section>
+
+    
+    <!-- RSVP -->
+
+    <section class="rsvp-section">
+
+        <div class="form-card">
+
+            <h2>Confirme sua Presença</h2>
+
+            <form id="rsvp-form">
+
+                <input type="text" id="nome" placeholder="Nome completo" required>
+
+                <input type="tel" id="telefone" placeholder="WhatsApp" required>
+
+                <label class="radio-group">
+
+                    <input type="radio" name="presenca" value="sim" checked>
+
+                    Sim, vou comparecer
+
+                </label>
+
+                <label class="radio-group">
+
+                    <input type="radio" name="presenca" value="nao">
+
+                    Não poderei comparecer
+
+                </label>
+
+                <div id="companions-container">
+
+                    <h3>Acompanhantes</h3>
+
+                </div>
+
+                <button type="button" id="add-companion">
+
+                    + Adicionar acompanhante
+
+                </button>
+
+                <button type="submit" class="confirm-btn">
+
+                    Confirmar Presença
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- MAPA -->
+
+    <section class="map-section">
+
+        <h2>Como Chegar</h2>
+
+        <iframe
+            src="https://maps.google.com/maps?q=avenida%20braz%20leme%202241%20sao%20paulo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+        </iframe>
+
+
+
+    </section>
+
+
+    <!-- COMPARTILHAR -->
+
+    <section class="share-section">
+
+        <button id="share-btn">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Compartilhar no WhatsApp
+
+        </button>
+
+    </section>
+
+    <!-- CONFIRMAÇÃO -->
+
+    <section id="success-message" class="success-message">
+
+        <i class="fas fa-circle-check"></i>
+
+        <h2>Presença Confirmada!</h2>
+
+        <p>
+            Obrigado pela confirmação.
+            Estamos esperando você!
+        </p>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            Feito com ❤️ para o aniversário do Vicenzo
+        </p>
+
+    </footer>
+
+    <!-- FIREBASE -->
+
+    <script type="module" src="js/firebase.js"></script>
+
+    <!-- CONTADOR -->
+
+    <script src="js/countdown.js"></script>
+
+    <!-- TEMA -->
+
+    <script src="js/theme.js"></script>
+
+    <!-- SCRIPT PRINCIPAL -->
+
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>
